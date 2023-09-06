@@ -26,7 +26,7 @@
     "nodemon": "^3.0.1",
     "socket.io": "^4.6.1",
     "trim-request": "^1.0.6",
-    "validator": "^13.9.0",
+    "validator": "^13.11.0",
     "winston": "^3.10.0"
   }
 }
