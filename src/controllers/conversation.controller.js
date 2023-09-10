@@ -29,7 +29,7 @@ export const create_open_conversation = async (req, res, next) => {
       if (existed_conversation) {
         res.json(existed_conversation);
       } else {
-        // let receiver_user = await findUser(receiver_id);
+        // let receiver_user = await User(receiver_id);
         let convoData = {
           name: "conversation name",
           picture: "conversation picture",
