@@ -1,5 +1,6 @@
 import logger from "../configs/logger.config.js";
 import { updateLatestMessage } from "../services/conversation.service.js";
+// import { updateLatestMessage } from "../services/conversation.service.js";
 import {
   createMessage,
   getConvoMessages,
@@ -23,7 +24,7 @@ export const sendMessage = async (req, res, next) => {
     let newMessage = await createMessage(msgData);
     let populatedMessage = await populateMessage(newMessage._id);
     await updateLatestMessage(convo_id, newMessage);
-    res.json(populatedMessage);
+    res.json(populatedMessage); 
   } catch (error) {
     next(error);
   }
