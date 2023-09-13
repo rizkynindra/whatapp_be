@@ -6,6 +6,7 @@ export const findUser = async (userId) => {
   return user;
 };
 
+// bisa disetting untuk melakukan pencarian nomor handphone
 export const searchUsers = async (keyword, userId) => {
   const users = await UserModel.find({
     $or: [
